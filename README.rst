@@ -40,7 +40,7 @@ Building the virtual machine
 ============================
 
 If you have an existing directory with code you wish to use inside the VM, you
-can set the variable `LAB_DIR` to the path of the directory, e.g.:
+can set the variable ``LAB_DIR`` to the path of the directory, e.g.:
 
 .. code-block:: bash
 
