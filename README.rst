@@ -3,7 +3,7 @@ geobox
 ******
 
 Virtual machine provisioned with a few geometry related packages, (fastkml,
-shapel, gmaps), for experimental purposes. The VM also includes the required
+shapely, gmaps), for experimental purposes. The VM also includes the required
 packages (ipython, jinja2, pyzmq, tornado) to run the ipython notebook.
 
 At the time of this writing the box used is the official **Ubuntu Server 14.04
