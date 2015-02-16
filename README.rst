@@ -39,6 +39,14 @@ and the following vagrant plugins:
 Building the virtual machine
 ============================
 
+If you have an existing directory with code you wish to use inside the VM, you
+can set the variable `LAB_DIR` to the path of the directory, e.g.:
+
+.. code-block:: bash
+
+   $ export LAB_DIR=/home/user/some_project/
+
+
 Run:
 
 .. code-block:: bash
