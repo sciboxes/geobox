@@ -2,6 +2,18 @@
 libgeos-dev:
   pkg.installed
 
+
+### for lxml
+libxml2-dev:
+  pkg.installed
+
+libxslt-dev:
+  pkg.installed
+
+zlib1g-dev:
+  pkg.installed
+
+
 virtualenv:
   pip.installed:
     - require:
