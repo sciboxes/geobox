@@ -9,3 +9,4 @@ python-gmaps==0.2.1
 pyzmq==14.5.0
 Shapely==1.5.6
 tornado==4.1
+yolk==0.4.3
