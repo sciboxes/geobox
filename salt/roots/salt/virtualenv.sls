@@ -1,6 +1,18 @@
-### for shapely
+### for shapely and basemap
 libgeos-dev:
   pkg.installed
+
+
+### for basemap
+libgeos_shared_object:
+  file.symlink:
+    - name: /usr/lib/libgeos.so
+    - target: libgeos-3.4.2.so
+    - user: root
+    - group: root
+    - mode: 644
+    - require:
+      - pkg: libgeos-dev
 
 
 ### for lxml
@@ -40,3 +52,18 @@ base_virtualenv:
     - verbose: True
     - require:
       - pip: virtualenv
+
+
+basemap:
+  pip.installed:
+    - name: basemap==1.0.7
+    - user: vagrant
+    - cwd: /home/vagrant/
+    - bin_env: /home/vagrant/env/
+    - allow_external: basemap
+    - allow_unverified: basemap
+    - verbose: True
+    - require:
+      - virtualenv: base_virtualenv
+      - pkg: libgeos-dev
+      - file: libgeos_shared_object
