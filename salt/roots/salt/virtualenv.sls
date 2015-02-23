@@ -14,6 +14,16 @@ zlib1g-dev:
   pkg.installed
 
 
+### for matplotlib
+libfreetype6-dev:
+  pkg:
+    - installed
+
+pkg-config:
+  pkg:
+    - installed
+
+
 virtualenv:
   pip.installed:
     - require:
